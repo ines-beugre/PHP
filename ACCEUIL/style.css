@@ -1,0 +1,267 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+	background-color: #FAF4FA;
+	margin: 0px;
+	padding: 15px;
+}
+
+#gatheme {
+	display: block;
+	background-color: #F97DEC;
+	font-family: AR CHRISTY;
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+
+}
+
+div > table> {
+background-color: #FAF4FA;
+float : left; 
+margin-left: 20px;
+
+}
+#banner0	
+	{
+	display: block;
+	background-color: #FAF4FA;
+	text-align: right;
+	margin-left: 20px;
+	}
+
+#banner1
+	{
+	display: block;
+	background-color: #F97DEC;
+	font-family: AR CHRISTY;
+	font-size: 30px;
+	text-align: center;
+	}
+
+#menu /* Ensemble du menu */
+{	
+	 font-weight : bold; /* on met le texte en gras */
+     font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+     font-size : 16px; /* hauteur du texte : 12 pixels */
+     width: 100%;
+     position: relative;
+
+}
+
+#menu ul{
+	min-width: 500px;
+	padding:0; /*pas de marge intérieure*/
+	margin:0; /*pas de marge extérieure*/
+	list-style: none; /*on supprime le style par défaut de la liste*/
+	line-height: 21px; /*on définit la hauteur pour chaque élément*/
+	text-align:center; /*on centre le texte qui se trouve dans la liste*/
+	
+	position:relative;
+	padding-top: 15px;
+	left: 70%;
+	margin-left: -80px;
+	
+	}
+
+#menu a /* Contenu des listes */
+
+{
+      display : inline-block; /* on change le type d'élément, les liens deviennent des balises de type block */
+      
+      text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+}
+#menu ul > li > a{
+width : 160px; /* largeur */
+height: 40px;
+text-align: center;
+padding: center;
+font-family : AR CENA;
+padding : center; /* aucune marge intérieure */
+        
+color : #000; /* couleur du texte */
+}
+
+
+#menu > ul > li /* Éléments des listes */      
+{ 		
+		display: inline-block;
+        float : left;  /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+        position: relative;
+       margin-left: 30%;
+       left:-70%;
+       background-color:   #aeb6bf;
+
+}
+#menu ul:hover .boutique{
+	background-color: #c39bd3;
+}
+	
+/*#menu ul::after{
+	content: "";
+	display: table;
+	clear:both;
+}*/
+#menu ul li:hover ul{
+	position: absolute;
+	top:100%;
+	left: -103px;
+	padding: 0px;
+	
+	/*z-index: 1000;*/
+	
+}
+#menu ul li ul li a {
+
+	display: inline-block;
+	border-top: 1px solid  #8e44ad ;
+	background-color: #c39bd3 ;
+}
+
+
+#menu ul li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 144px; /* Largeur des sous-listes */
+       	left: -999em;  Hop, on envoie loin du champ de vision
+}
+
+#menu li ul ul 
+{
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 7px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menu ul li
+{
+        border-right: 7px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+        
+}
+
+#menu li ul li /* Eléments de sous-listes */
+{
+        /* pour ie qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous-liste */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menu li ul li                
+{
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menu li ul ul                
+{
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+}
+
+#contenuprincipal{
+	display: block;
+	padding:60px; /*pas de marge intérieure*/
+	margin    : 5% 5% 5% 5% ; /*marge extérieure*/
+	background-color: #FAF4FA;
+	font-size: 20px; /*hauteur du texte : 12 pixels */
+	text-align: justify;
+	font-family: Helvetica, sans-serif, Arial;
+}
+/* Style carte début*/
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+      	margin-top: 35px;
+        height: 70%;
+        width: 40%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 30px;
+        left: 15%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+	  padding-left: 10px;
+	  margin-top: 45px;
+	  }
+
+/* Style carte fin*/
+
+form
+{
+position: absolute;
+margin: -450px 700px;
+font-family: Comic sans ms;
+border:2px solid #DF3F3F;
+width: 40%;
+}
+h3 {
+	text-align: center;
+	display: block;
+	font-size : 18px;
+	font-family: Helvetica, sans-serif, Arial;
+}
+
+p.topo{
+	text-align: center;
+	color: maroon;
+}
+#title{
+	font-family: Helvetica, sans-serif, Arial;
+	color: maroon;
+	font-size : 18px;
+	margin-top: 10px;
+	text-align: center;
+}
+input.soumet {
+text-align: center;
+}
+div.erreur{
+	background-color:;
+	margin-left: 700px;
+	margin-top: -70px;
+
+	font-family: Comic sans ms;
+	color: red;
+}
+
+
+#footer {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  display: block;
+  margin-bottom: 0px;
+  background-color: #F1F4F4;
+  text-align: center;
+}
+
